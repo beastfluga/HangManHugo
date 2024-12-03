@@ -2,10 +2,13 @@
 	"sales-pitch": "Svar. Helt. Enkelt.",
 	"subHeading": "Ett enkelt enkätverktyg",
 	"invite": "Bjud in deltagare med den här länken:",
-	"createPoll": "Skapa röstning",
+	"createGame": "Skapa spel",
 	"participatePoll": "Delta i röstning",
 	"question": "Fråga",
 	"changeLanguage": "Change to English",
 	"about": "Om oss",
-	"participateInPoll": "Delta i enkäten"
+	"participateInPoll": "Delta i enkäten",
+	"titlegame": "Hänga gubbe",
+	"coop": "coop",
+	"enterWordHere": "skriv ditt ord här"
 }

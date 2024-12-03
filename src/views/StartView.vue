@@ -5,7 +5,7 @@
     </div>
     <div class="logo">
       <img src="/img/logo.png">
-      Polly polling tool 
+      {{ uiLabels.titlegame }}
       <img src="../assets/logo.svg">
     </div>
   </header>
@@ -14,7 +14,7 @@
       {{ uiLabels.changeLanguage }}
     </button>
     <router-link to="/create/">
-      {{ uiLabels.createPoll }}
+      {{ uiLabels.createGame }}
     </router-link>
     <a href="">
       {{ uiLabels.about }}

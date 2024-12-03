@@ -16,7 +16,7 @@ export default {
 </script>
 <style scoped>
   nav {
-    background-color: lightgray;
+    background-color: pink;
     width:100%;
     height: 4em;
     display: grid;
@@ -28,7 +28,7 @@ export default {
     font-size: 0.8rem;
     letter-spacing: 0.1em;
     text-decoration: none;
-    color: gray;
+    color: blue;
     display: grid;
     align-items: center;
     justify-content: center;
@@ -51,7 +51,7 @@ export default {
     padding-left: 1em;
   }
   .hide {
-    left:-12em;
+    left:-200em;
   }
 }
 </style>

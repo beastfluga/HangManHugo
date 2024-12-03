@@ -9,6 +9,11 @@ const router = createRouter({
       name: 'Start',
       component: StartView
     },
+    {
+      path: '/hostLobby/',
+      name: 'lobbyForHost',
+      component: () => import('../views/lobbyForHost.vue')
+    },
       {
       path: '/poll/:id',
       name: 'PollView',
@@ -23,6 +28,11 @@ const router = createRouter({
       path: '/create/',
       name: 'CreateView',
       component: () => import('../views/CreateView.vue')
+    },
+    {
+    path: '/submitWord/',
+    name: '/WordSubmission/',
+    component: () => import('../views/WordSubmission.vue')
     },
     {
       path: '/result/:id',

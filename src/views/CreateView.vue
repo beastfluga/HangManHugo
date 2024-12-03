@@ -1,10 +1,13 @@
 <template>
+  <h1>Create Game</h1>
+  <div class="gameMode">
+      
+      <router-link to="/submitword/" class="coopLink"> <!--submitword står som path i router index, i router index står det vilken sida man byter till, dvs WordSubmission-->
+      {{ uiLabels.coop }}
+      </router-link>
+     </div>
   <div>
-    Poll link: 
-    <input type="text" v-model="pollId">
-    <button v-on:click="createPoll">
-      Create poll
-    </button>
+  
     <div>
       {{ uiLabels.question }}:
       <input type="text" v-model="question">
@@ -76,3 +79,19 @@ export default {
   }
 }
 </script>
+<style scoped>
+.gameMode {
+ 
+  background-color: blue;
+  justify-content: center;
+  width: 300px;
+  align-items: center;
+  
+}
+.coopLink {
+ 
+  color: pink;
+  font-size: 70px;
+}
+
+</style>
