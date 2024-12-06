@@ -14,6 +14,11 @@ const router = createRouter({
       name: 'lobbyForHost',
       component: () => import('../views/lobbyForHost.vue')
     },
+    {
+      path: '/toInGameHostView/',
+      name: 'inGameHostView',
+      component: () => import('../views/inGameHostView.vue')
+    },
       {
       path: '/poll/:id',
       name: 'PollView',

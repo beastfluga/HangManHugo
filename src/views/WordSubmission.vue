@@ -1,31 +1,42 @@
 <template>
 <h1>Co-op mode</h1>
 
-<newPageButton v-bind:text="uiLabels.enterWordHere" to="/hostLobby/"></newPageButton>
+<NewPageButton v-bind:text="uiLabels.sendWord" to="/hostLobby/"></newPageButton>
+<InputField label="Enter Word" v-model="enteredword" placeholder="example" id="enter-word"></InputField>
+
+
 
 </template>
 
 <script>
 import io from 'socket.io-client';
-import newPageButton from '../components/Button.vue';
+import NewPageButton from '../components/Button.vue';
+import InputField from '../components/InputField.vue';
 const socket = io("localhost:3000");
 
+
+
 export default {
-  name: 'CreateView',
+  name: 'wordSubmission',
   components: {
-    newPageButton
+    NewPageButton,
+    InputField
   },
   data: function () {
     return {
      
       uiLabels: {},
+      enteredword: ""
     }
   },
+  
   created: function () {
     socket.on( "uiLabels", labels => this.uiLabels = labels );
     socket.emit( "getUILabels", this.lang );
   }
+  
 }
+
 
 
 

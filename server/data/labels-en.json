@@ -9,6 +9,8 @@
 	"about": "About",
 	"participateInPoll": "Participate in poll",
 	"titlegame": "HANG MAN",
-	"coop": "coop",
-	"enterWordHere": "Enter word here"
+	"coop": "Co-op",
+	"enterWordHere": "Enter word here",
+	"sendWord": "Submit word",
+	"start": "Start"
 }
