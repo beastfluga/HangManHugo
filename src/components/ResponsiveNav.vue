@@ -51,7 +51,7 @@ export default {
     padding-left: 1em;
   }
   .hide {
-    left:-200em;
+    left:-12em;
   }
 }
 </style>
